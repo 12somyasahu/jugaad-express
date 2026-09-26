@@ -1,5 +1,24 @@
 <!doctype html>
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#123d39"><meta name="description" content="One generator. Twelve minutes. Absolutely no warranty. A 3D Indian roadside driving adventure."><title>Jugaad Express — Shaadi Special</title></head>
-<body><div id="app"></div><script type="module" src="/src/main.js"></script></body>
+<body style="margin:0;background:#153f3c;color:#fff0c9">
+<div id="app">
+  <main style="max-width:640px;margin:12vh auto;padding:32px;font:16px/1.7 Arial,sans-serif">
+    <h1 style="color:#f1bd58">Jugaad Express</h1>
+    <div id="launch-help">
+      <p>This game needs a local server. Opening index.html directly cannot start it.</p>
+      <p><strong>Close this tab, return to the game folder, and double-click Start Game.cmd.</strong></p>
+      <p>Keep the terminal window open while playing. The launcher opens the correct browser address automatically.</p>
+      <p>Or open PowerShell in the game folder and run:</p>
+      <pre style="white-space:pre-wrap;background:#244e46;padding:18px">npm.cmd install
+npm.cmd run dev</pre>
+      <p>Then open the Local URL printed in the terminal.</p>
+      <a href="https://github.com/12somyasahu/jugaad-express#readme" style="color:#f1bd58">Full setup guide</a>
+    </div>
+    <noscript><p>Enable JavaScript in your browser to play.</p></noscript>
+  </main>
+</div>
+<script>if(location.protocol !== 'file:') document.getElementById('launch-help').textContent='Loading your delivery vehicle…';</script>
+<script type="module" src="/src/main.js"></script>
+</body>
 </html>

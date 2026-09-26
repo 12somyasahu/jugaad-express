@@ -8,6 +8,10 @@ Created by **[12somyasahu](https://github.com/12somyasahu)**.
 
 ![Jugaad Express title screen and its improvised delivery vehicle](docs/title-screen.png)
 
+## Easiest Windows launch
+
+Install Node.js 22.12 or newer once, then double-click **Start Game.cmd** in the game folder. It installs missing dependencies and opens the correct local browser URL automatically. Keep its terminal window open while playing. Do not double-click index.html; that now displays launch instructions instead of a blank screen.
+
 ## Play from this folder on Windows
 
 1. Install **Node.js 22.12 or newer** from [nodejs.org](https://nodejs.org/). Node includes npm. Reopen your terminal after installation.
