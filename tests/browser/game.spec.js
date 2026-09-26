@@ -1,5 +1,12 @@
 import {test,expect} from '@playwright/test';
 
+// Hosted runners render WebGL in software. Exercise the supported Low setting.
+test.beforeEach(async({page})=>{
+ if(process.env.CI)await page.addInitScript(()=>{
+   if(!localStorage.getItem('jugaad-express'))localStorage.setItem('jugaad-express',JSON.stringify({settings:{quality:'low'}}));
+ });
+});
+
 test('drive, collide, collect, install, reverse, repair, pause and restart',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('http://127.0.0.1:5188');
